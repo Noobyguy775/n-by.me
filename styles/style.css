@@ -51,7 +51,7 @@ h1, h2, h3, h4, h5 {
 
 .content {
     display: flex; 
-    margin-top:50px;
+    margin-top:70px;
 }
 
 .content-main-box {
@@ -78,6 +78,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .content-main-box .avatar-image {
+    margin-top:10px;
     border-radius:100%;
     border:5px solid var(--primary);
     width:50%;
