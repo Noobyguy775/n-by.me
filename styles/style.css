@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Figtree:700|Figtree:400');
+:root {
+    --text: rgb(142, 136, 215);
+    --background: rgb(18, 18, 23);
+    --primary: rgb(98, 103, 183);
+    --secondary: rgb(65, 65, 78);
+    --accent: rgb(137, 98, 183);
+    --page-length:750px;
+}
+body {
+    color:var(--text);
+    font-family: 'Figtree';
+    font-weight: 400;
+    font-style:normal;
+    background:var(--background);
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Figtree';
+  font-weight: 700;
+}
+
+.sticky {
+    position: fixed;
+    height:50px;
+    line-height:50px;
+    width:100%;
+    top:0;
+    left:0;
+    box-shadow: 0px 1px 5px var(--primary);
+    background:var(--background);
+    color:var(--primary);
+}
+
+.sticky text {
+    font-size:150%;
+    padding:10px;
+    padding-left:3px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+.sticky .avatar-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.content {
+    display: flex; 
+    margin-top:50px;
+}
+
+.content-main-box {
+    width:80%;
+    height:var(--page-length);
+    margin:auto;
+    background:var(--secondary);
+    text-align:center;
+    border-radius:50px;
+}
+
+.content-main-box ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin:0px;
+}
+.content-main-box li {
+    display: inline
+}
+.social-icons img {
+    margin-top:5px;
+    width:40px
+}
+
+.content-main-box .avatar-image {
+    border-radius:100%;
+    border:5px solid var(--primary);
+    width:50%;
+    max-width:calc(var(--page-length) / 3);
+    min-width:calc(var(--page-length) / 5);
+}
