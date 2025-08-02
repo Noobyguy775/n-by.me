@@ -1,5 +1,5 @@
-import r from "@/components/redirects/discord/r";
+import r from '@/components/redirects/discord/r';
 
-export default function re(){
-    return r();
+export default function re() {
+  return r();
 }

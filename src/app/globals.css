@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
   /* Text Colors */
@@ -77,7 +77,7 @@
   }
 
   h1 {
-    @apply text-3xl font-bold text-text-50;
+    @apply text-text-50 text-3xl font-bold;
   }
 
   h2 {
@@ -106,7 +106,7 @@
   }
 
   .subtext {
-    @apply text-text-300
+    @apply text-text-300;
   }
 
   #oo {
@@ -120,6 +120,6 @@
   }
 
   ::selection {
-    @apply bg-primary-50/15
+    @apply bg-primary-50/15;
   }
 }

@@ -1,5 +1,5 @@
-import r from "@/components/redirects/home";
+import r from '@/components/redirects/home';
 
-export default function home(){
-    return r();
+export default function home() {
+  return r();
 }
