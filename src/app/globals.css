@@ -118,4 +118,8 @@
   #nooby:hover #oo {
     @apply inline;
   }
+
+  ::selection {
+    @apply bg-primary-50/15
+  }
 }

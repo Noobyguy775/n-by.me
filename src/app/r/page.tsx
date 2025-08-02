@@ -1,10 +1,5 @@
-{/* currently handled through cloudflare */}
-{/* so probably dont need to add redirects */}
+import r from "@/components/redirects/home";
 
-export default function r() {
-    return (
-        <>
-            redirects you cutely
-        </>
-    )
+export default function home(){
+    return r();
 }
