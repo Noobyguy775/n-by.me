@@ -17,9 +17,6 @@ jobs:
           ref: ${{ github.head_ref }}
           fetch-depth: 0
 
-      - name: Install tailwind plugin
-        run: "npm i prettier prettier-plugin-java --save-dev"
-
       - name: Prettify code
         uses: creyD/prettier_action@v4.6
         with:
