@@ -33,4 +33,5 @@ jobs:
           same_commit: true
           only_changed: true
           prettier_plugins: "prettier-plugin-tailwindcss"
+          github_token: ${{ secrets.PRETTIER_TOKEN }}
           
