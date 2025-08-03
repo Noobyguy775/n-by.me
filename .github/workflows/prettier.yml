@@ -6,6 +6,10 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+  pull-requests: write
+  
 jobs:
   prettier:
     runs-on: ubuntu-latest
@@ -27,3 +31,4 @@ jobs:
           same_commit: true
           only_changed: true
           prettier_plugins: "prettier-plugin-tailwindcss"
+          
