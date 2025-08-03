@@ -23,5 +23,4 @@ jobs:
           prettier_options: "--write ."
           same_commit: true
           only_changed: true
-          prettier_plugins: "@prettier/plugin-tailwindcss"
-          
+          prettier_plugins: "prettier-plugin-tailwindcss"
