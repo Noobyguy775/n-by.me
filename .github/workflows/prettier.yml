@@ -23,9 +23,8 @@ jobs:
       - name: Prettify code
         uses: creyD/prettier_action@v4.6
         with:
-          prettier_options: "--write ."
+          prettier_options: "--write **/src/*{js,jsx,ts,tsx,css}"
           same_commit: true
-          only_changed: true
           prettier_plugins: "prettier-plugin-tailwindcss"
           github_token: ${{ secrets.PRETTIER_TOKEN }}
           
