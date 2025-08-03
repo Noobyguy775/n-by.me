@@ -42,6 +42,7 @@ export default function Navbar() {
             alt="github profile link"
             width={32}
             height={32}
+            className="spin-image"
           />
         </Link>
         <Link href="/r/roblox">
@@ -50,6 +51,7 @@ export default function Navbar() {
             alt="roblox profile link"
             width={32}
             height={32}
+            className="spin-image"
           />
         </Link>
         <Link href="/r/discord">
@@ -58,6 +60,7 @@ export default function Navbar() {
             alt="discord profile link"
             width={32}
             height={32}
+            className="spin-image"
           />
         </Link>
       </div>

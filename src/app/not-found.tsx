@@ -14,7 +14,9 @@ export default function NotFound() {
           </div>
         </div>
         <div>
-          <Link href="/">{'=> Main Floor'}</Link>
+          <Link href="/">
+            Main Floor <span className="link-arrow">&#61;&gt;</span>
+          </Link>
         </div>
       </div>
     </>

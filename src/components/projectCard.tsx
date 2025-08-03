@@ -44,6 +44,7 @@ export default function ProjectCard(
                   alt={`${l.name} link`}
                   width={32}
                   height={32}
+                  className="spin-image"
                 />
               </Link>
             ))}

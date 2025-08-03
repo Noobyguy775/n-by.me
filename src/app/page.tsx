@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div id="main">
       <div className="mt-10 flex h-full w-full flex-col items-center justify-center gap-15 text-center">
-        <div id="intro" className="flex h-41 flex-row">
+        <div id="intro" className="flex flex-row">
           <Image
             src="/files/pfp2.png"
             alt="profile picture 2"
@@ -18,26 +18,31 @@ export default function Home() {
               'bg-background-800 border-accent-600 min-w-40 border-4 border-r-0 p-1'
             }
           />
-          {/* this is ugly */}
-          <div className="from-accent-600 to-primary-600 w-300 bg-linear-to-r font-semibold">
-            <div className="bg-background-800 my-1 flex h-39 flex-col justify-around gap-1">
-              <h1
-                id="nooby"
-                className="from-accent-400 to-primary-400 background-clip bg-linear-to-r"
-              >
-                n
-                <span id="emdash" className="bg-text-100 background-clip">
-                  &mdash;&mdash;
-                </span>
-                <span id="oo">oo</span>by.me
-              </h1>
-              <p>
-                {
-                  'Welcome to my corner! I like to play games, listen to music and code programs that are sometimes useful'
-                }
-                <span className="subtext">(i hope)</span>
-              </p>
-            </div>
+          <div
+            className="bg-background-800 border-gradient flex min-h-42 flex-col justify-around gap-1 border-x-0 font-semibold"
+            style={
+              {
+                '--gradient-color-1': 'var(--color-accent-600)',
+                '--gradient-color-2': 'var(--color-primary-600)',
+              } as React.CSSProperties
+            }
+          >
+            <h1
+              id="nooby"
+              className="from-accent-400 to-primary-400 background-clip bg-linear-to-r"
+            >
+              n
+              <span id="emdash" className="bg-text-100 background-clip">
+                &mdash;&mdash;
+              </span>
+              <span id="oo">oo</span>by.me
+            </h1>
+            <p>
+              {
+                'Welcome to my corner! I like to play games, listen to music and code programs that are sometimes useful'
+              }
+              <span className="subtext">(i hope)</span>
+            </p>
           </div>
           <Image
             src="/files/pfp.png"
@@ -65,7 +70,7 @@ export default function Home() {
               <h2>projects</h2>
             </div>
           </div>
-          <div className="grid w-250 grid-cols-2 gap-10">
+          <div className="grid grid-cols-2 gap-10">
             {ProjectCard(
               'Natro Macro',
               'A macro to automate various repetitive tasks in Bee Swarm simulator on Roblox',
@@ -105,7 +110,9 @@ export default function Home() {
           </div>
           <div className="p-4">
             <h3>
-              <Link href="/projects">More info {'=>'}</Link>
+              <Link href="/projects">
+                More info <span className="link-arrow">&#61;&gt;</span>
+              </Link>
             </h3>
           </div>
         </div>
@@ -146,7 +153,9 @@ export default function Home() {
           </div>
           <div className="p-4">
             <h3>
-              <Link href="/accounts">More info {'=>'}</Link>
+              <Link href="/accounts">
+                More info <span className="link-arrow">&#61;&gt;</span>
+              </Link>
             </h3>
           </div>
         </div>

@@ -5,9 +5,15 @@ export default function r() {
     <div className="flex flex-col items-center justify-center">
       <h2>Redirects</h2>
       <div className="grid grid-rows-3 gap-4">
-        <Link href="/r/discord">{'=> r/Discord'}</Link>
-        <Link href="/r/github">{'=> r/Github'}</Link>
-        <Link href="/r/roblox">{'=> r/Roblox'}</Link>
+        <Link href="/r/discord">
+          r/Discord <span className="link-arrow">&#61;&gt;</span>
+        </Link>
+        <Link href="/r/github">
+          r/Github <span className="link-arrow">&#61;&gt;</span>
+        </Link>
+        <Link href="/r/roblox">
+          r/Roblox <span className="link-arrow">&#61;&gt;</span>
+        </Link>
       </div>
     </div>
   );

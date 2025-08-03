@@ -74,6 +74,31 @@
 
   a {
     @apply text-primary-300 hover:text-primary-100 transition-colors;
+
+    &:hover {
+      transition: color 0.2s ease-in-out;
+
+      .link-arrow {
+        animation: slide-in 1s infinite ease-in-out;
+      }
+    }
+  }
+
+  .link-arrow {
+    display: inline-block;
+  }
+
+  @keyframes slide-in {
+    0% {
+      transform: translateX(0%);
+    }
+
+    50% {
+      transform: translateX(25%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
   }
 
   h1 {
@@ -111,6 +136,7 @@
 
   #oo {
     @apply hidden;
+    transition: display 1s ease-in-out;
   }
   #nooby:hover #emdash {
     @apply hidden;
@@ -121,5 +147,23 @@
 
   ::selection {
     @apply bg-primary-50/15;
+  }
+
+  .border-gradient {
+    border: 4px solid transparent;
+    border-image: linear-gradient(
+        to right,
+        var(--gradient-color-1),
+        var(--gradient-color-2)
+      )
+      1; /* Gradient definition */
+  }
+
+  .spin-image {
+    @apply transition-transform delay-100 duration-750 ease-in-out;
+  }
+
+  .spin-image:hover {
+    @apply rotate-360;
   }
 }
