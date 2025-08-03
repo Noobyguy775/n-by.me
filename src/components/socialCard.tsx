@@ -20,7 +20,7 @@ export default function SocialCard(
             width={64}
             height={64}
             id={name.toLowerCase() + '-social-card-icon'}
-            className='spin-image'
+            className="spin-image"
           />
         </Link>
         <h3>
