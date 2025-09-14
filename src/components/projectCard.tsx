@@ -17,7 +17,7 @@ export default function ProjectCard(
   return (
     <div
       id="project-card"
-      className="border-secondary-600 bg-background-800 border-4 p-2"
+      className="border-secondary-600 bg-background-850 border-4 p-2"
     >
       <div className="grid grid-cols-4 items-center">
         <div className="col-span-1">

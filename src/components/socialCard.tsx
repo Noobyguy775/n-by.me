@@ -10,7 +10,7 @@ export default function SocialCard(
   return (
     <div
       id="social-card"
-      className="border-primary-600 bg-background-800 flex h-40 w-40 items-center justify-center border-4 p-2"
+      className="border-primary-600 bg-background-850 flex h-40 w-40 items-center justify-center border-4 p-2"
     >
       <div className="flex flex-col items-center gap-1">
         <Link href={link}>
