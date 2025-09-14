@@ -15,11 +15,11 @@ export default function Home() {
             width={150}
             height={150}
             className={
-              'bg-background-800 border-accent-600 min-w-40 border-4 border-r-0 p-1'
+              'bg-background-850 border-accent-600 min-w-40 border-4 border-r-0 p-1'
             }
           />
           <div
-            className="bg-background-800 border-gradient flex min-h-42 flex-col justify-around gap-1 border-x-0 font-semibold"
+            className="bg-background-850 border-gradient flex min-h-42 flex-col justify-around gap-1 border-x-0 font-semibold"
             style={
               {
                 '--gradient-color-1': 'var(--color-accent-600)',
@@ -41,7 +41,7 @@ export default function Home() {
               {
                 'Welcome to my corner! I like to play games, listen to music and code programs that are sometimes useful'
               }
-              <span className="subtext">(i hope)</span>
+              <span className="subtext">{' (i hope)'}</span>
             </p>
           </div>
           <Image
@@ -50,12 +50,12 @@ export default function Home() {
             width={150}
             height={160}
             className={
-              'bg-background-800 border-primary-600 min-w-40 border-4 border-l-0 p-1'
+              'bg-background-850 border-primary-600 min-w-40 border-4 border-l-0 p-1'
             }
           />
         </div>
         <div id="links" className="flex w-full flex-col items-center gap-4">
-          <div className="border-secondary-600 bg-background-800 w-50 border-4 p-4">
+          <div className="border-secondary-600 bg-background-850 w-50 border-4 p-4">
             <div className="flex flex-row justify-center gap-1">
               <svg
                 aria-label="icon"
@@ -93,7 +93,7 @@ export default function Home() {
               'Bloxbind',
               'A tool for facilitating the linking of Roblox and Discord accounts',
               'https://Bloxbind.com',
-              '/files/logos/Bloxbind.png',
+              '/files/logos/Bloxbind.svg',
               [
                 {
                   name: 'Github',
@@ -117,7 +117,7 @@ export default function Home() {
           </div>
         </div>
         <div id="socials" className="flex w-full flex-col items-center gap-3">
-          <div className="border-primary-600 bg-background-800 w-50 border-4 p-4">
+          <div className="border-primary-600 bg-background-850 w-50 border-4 p-4">
             <div className="flex flex-row justify-center gap-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -131,7 +131,7 @@ export default function Home() {
               <h2>accounts</h2>
             </div>
           </div>
-          <div className="grid w-200 grid-cols-3 justify-items-center">
+          <div className="grid grid-cols-3 justify-items-center gap-4">
             {SocialCard(
               'Github',
               '/r/github',
