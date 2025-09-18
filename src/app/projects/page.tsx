@@ -9,7 +9,7 @@ export default function projects() {
       height={128}
     />
     <p>
-      {"Nothing's here yet! You'll check back later, right?"}
+      {"Nothing's here yet! You'll check back later, right?\n\nRight MathU?"}
     </p>
   </>;
 }
