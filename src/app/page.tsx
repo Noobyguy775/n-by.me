@@ -41,7 +41,7 @@ export default function Home() {
               {
                 'Welcome to my corner! I like to play games, listen to music and code programs that are sometimes useful'
               }
-              <span className="subtext">{" (i hope)"}</span>
+              <span className="subtext">{' (i hope)'}</span>
             </p>
           </div>
           <Image
@@ -131,7 +131,7 @@ export default function Home() {
               <h2>accounts</h2>
             </div>
           </div>
-          <div className="grid gap-4 grid-cols-3 justify-items-center">
+          <div className="grid grid-cols-3 justify-items-center gap-4">
             {SocialCard(
               'Github',
               '/r/github',
