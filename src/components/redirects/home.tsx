@@ -6,13 +6,13 @@ export default function r() {
       <h2>Redirects</h2>
       <div className="grid grid-rows-3 gap-4">
         <Link href="/r/discord">
-          r/Discord <span className="link-arrow">&#61;&gt;</span>
+          r/Discord <span className="link-arrow">{'->'}</span>
         </Link>
         <Link href="/r/github">
-          r/Github <span className="link-arrow">&#61;&gt;</span>
+          r/Github <span className="link-arrow">{'->'}</span>
         </Link>
         <Link href="/r/roblox">
-          r/Roblox <span className="link-arrow">&#61;&gt;</span>
+          r/Roblox <span className="link-arrow">{'->'}</span>
         </Link>
       </div>
     </div>
