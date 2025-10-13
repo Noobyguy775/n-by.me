@@ -111,7 +111,7 @@ export default function Home() {
           <div className="p-4">
             <h3>
               <Link href="/projects">
-                More info <span className="link-arrow">&#61;&gt;</span>
+                More info <span className="link-arrow">{'->'}</span>
               </Link>
             </h3>
           </div>
@@ -154,7 +154,7 @@ export default function Home() {
           <div className="p-4">
             <h3>
               <Link href="/accounts">
-                More info <span className="link-arrow">&#61;&gt;</span>
+                More info <span className="link-arrow">{'->'}</span>
               </Link>
             </h3>
           </div>
