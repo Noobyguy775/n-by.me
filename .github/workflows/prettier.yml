@@ -18,13 +18,11 @@ jobs:
           fetch-depth: 0
       
       - name: Install tailwind plugin
-        run: "npm i"
+        run: "npm i prettier-plugin-tailwindcss"
 
-      - name: Prettify code
+      - name: Check if code is pretty
         uses: creyD/prettier_action@v4.6
         with:
-          prettier_options: "--write ."
-          same_commit: true
+          prettier_options: "--c ."
           prettier_plugins: "prettier-plugin-tailwindcss"
-          github_token: ${{ secrets.PRETTIER_TOKEN }}
           
