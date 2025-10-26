@@ -50,7 +50,7 @@ export function ProjectPreview({
   return (
     <div
       className={`${theme} flex flex-col items-center justify-center border-4 p-4`}
-      id={title.toLowerCase() + '-project-preview-card'}
+      id={title.replaceAll(' ', '-').toLowerCase() + '-project-preview-card'}
     >
       <div className="w-full">
         <Link href={link}>
@@ -59,22 +59,28 @@ export function ProjectPreview({
             alt={`Preview of ${title}`}
             width={500}
             height={500}
-            id={title.toLowerCase() + '-project-preview-icon'}
+            id={
+              title.replaceAll(' ', '-').toLowerCase() + '-project-preview-icon'
+            }
             className="h-[50vh] max-h-[500px] w-full rounded-sm object-contain"
           />
         </Link>
       </div>
       <div>
         <h3
-          id={title.toLowerCase() + '-project-preview-title'}
+          id={
+            title.replaceAll(' ', '-').toLowerCase() + '-project-preview-title'
+          }
           className="project-preview-title"
         >
           <Link href={link}>
-            <span className="link-arrow">{'->'}</span> {title}{' '}
             <span className="link-arrow">{'->'}</span>
+            {title} <span className="link-arrow">{'->'}</span>
           </Link>
         </h3>
-        <p className="p-2">{description}</p>
+        <p id="project-preview-description" className="p-2">
+          {description}
+        </p>
       </div>
     </div>
   );

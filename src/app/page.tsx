@@ -15,7 +15,7 @@ export default function Home() {
             width={150}
             height={150}
             className={
-              'bg-background-850 border-accent-600 min-w-40 border-4 border-r-0 p-1'
+              'bg-background-850 border-accent-600 hidden min-w-40 border-4 border-r-0 p-1 sm:block'
             }
           />
           <div
@@ -50,7 +50,7 @@ export default function Home() {
             width={150}
             height={160}
             className={
-              'bg-background-850 border-primary-600 min-w-40 border-4 border-l-0 p-1'
+              'bg-background-850 border-primary-600 hidden min-w-40 border-4 border-l-0 p-1 sm:block'
             }
           />
         </div>
@@ -70,7 +70,7 @@ export default function Home() {
               <h2>projects</h2>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-10">
+          <div className="grid grid-cols-1 gap-10 sm:grid-cols-2">
             {ProjectCard(
               'Natro Macro',
               'A macro to automate various repetitive tasks in Bee Swarm simulator on Roblox',
@@ -93,7 +93,7 @@ export default function Home() {
               'Bloxbind',
               'A tool for facilitating the linking of Roblox and Discord accounts',
               'https://Bloxbind.com',
-              '/files/logos/Bloxbind.svg',
+              '/files/logos/Bloxbind.png',
               [
                 {
                   name: 'Github',
