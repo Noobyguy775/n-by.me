@@ -93,7 +93,7 @@ export default function Home() {
               'Bloxbind',
               'A tool for facilitating the linking of Roblox and Discord accounts',
               'https://Bloxbind.com',
-              '/files/logos/Bloxbind.png',
+              '/files/logos/Bloxbind.svg',
               [
                 {
                   name: 'Github',
