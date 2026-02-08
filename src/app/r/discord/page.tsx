@@ -1,4 +1,4 @@
-import r from '@/components/redirects/discord/r';
+import r from '@/components/pages/redirects/discord/r';
 
 export default function re() {
   return r();

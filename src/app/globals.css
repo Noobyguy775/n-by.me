@@ -73,8 +73,10 @@
     @apply bg-background-900 text-text-100;
   }
 
-  a {
+  a,
+  .link {
     @apply text-primary-300 hover:text-primary-100 transition-colors;
+    cursor: pointer;
 
     &:hover {
       transition: color 0.2s ease-in-out;

@@ -1,6 +1,6 @@
 import Footer from '@/components/Footer';
-import ProjectCard from '@/components/projectCard';
-import SocialCard from '@/components/socialCard';
+import ProjectCard from '@/components/pages/root/projectCard';
+import SocialCard from '@/components/pages/root/socialCard';
 import Image from 'next/image';
 import Link from 'next/link';
 

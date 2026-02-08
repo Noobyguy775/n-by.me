@@ -1,4 +1,4 @@
-import r from '@/components/redirects/roblox/r';
+import r from '@/components/pages/redirects/roblox/r';
 
 export default function re() {
   return r();
