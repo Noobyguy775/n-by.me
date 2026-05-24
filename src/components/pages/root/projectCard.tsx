@@ -19,7 +19,7 @@ export default function ProjectCard(
       id="project-card"
       className="border-secondary-600 bg-background-850 border-4 p-2"
     >
-      <div className="grid grid-cols-4 items-center w-full h-full">
+      <div className="grid h-full w-full grid-cols-4 items-center">
         <div className="col-span-1 flex items-center justify-center">
           <Link href={link}>
             <Image
@@ -28,7 +28,7 @@ export default function ProjectCard(
               width={128}
               height={128}
               id={title.toLowerCase() + '-project-card-icon'}
-              className="sm:flex hidden"
+              className="hidden sm:flex"
             />
             <Image
               src={icon}
@@ -36,7 +36,7 @@ export default function ProjectCard(
               width={80}
               height={80}
               id={title.toLowerCase() + '-project-card-icon'}
-              className="sm:hidden flex"
+              className="flex sm:hidden"
             />
           </Link>
         </div>

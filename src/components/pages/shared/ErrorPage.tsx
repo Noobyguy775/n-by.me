@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
@@ -21,10 +21,7 @@ export default function ErrorPage({ title, text }: ErrorPageProps) {
           <Link href="/">
             Main Floor <span className="link-arrow">{'->'}</span>
           </Link>
-          <p 
-          onClick={() => router.back()}
-          className="link"
-          >
+          <p onClick={() => router.back()} className="link">
             <span className="link-arrow">{'<-'}</span> Previous Floor
           </p>
         </div>
