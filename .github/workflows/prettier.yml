@@ -11,18 +11,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout Code
         uses: actions/checkout@v6
-        with:
-          ref: ${{ github.head_ref }}
-          fetch-depth: 0
       
-      - name: Install tailwind plugin
-        run: "npm i prettier-plugin-tailwindcss"
+      - name: Install dependencies
+        run: "npm i"
 
-      - name: Check if code is pretty
-        uses: creyD/prettier_action@v4.6
-        with:
-          prettier_options: "--c ./src"
-          prettier_plugins: "prettier-plugin-tailwindcss"
-          
+      - name: Check prettier
+        run: "npm run format:check"
+
+      - name: Check lint
+        run: "npm run lint:check"

@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "npx eslint . --fix .",
+    "lint": "npx eslint . --fix",
+    "lint:check": "npx eslint .",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "watch": "onchange \"**/*\" -- prettier --write --ignore-unknown {{changed}}"
