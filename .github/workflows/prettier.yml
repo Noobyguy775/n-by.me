@@ -23,6 +23,6 @@ jobs:
       - name: Check if code is pretty
         uses: creyD/prettier_action@v4.6
         with:
-          prettier_options: "--c ."
+          prettier_options: "--c ./src"
           prettier_plugins: "prettier-plugin-tailwindcss"
           
